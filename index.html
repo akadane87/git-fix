@@ -16,8 +16,8 @@
       <nav>
         <div class="button-wrapper">
           <button class="nav-button" type="submit">Cart</button>
-          <button class="nav-button" type="submit" data-toggle="modal" data-target="#myModal">Login</button>
-          <button class="nav-button" type="submit">Purchases</button>
+          <button class="nav-button" type="submit" data-toggle="modal" data-target="#authModal">Login</button>
+          <button class="nav-button" type="submit" data-toggle="modal" data-target="#myModal">Purchases</button>
         </div>
       </nav>
           <div class="content-container">
@@ -31,16 +31,20 @@
           cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est laborum.</p>
 
+          <div class="product-module">
+          <a href="#" data-toggle="modal" data-target="productModal">
+
+          </div>
 
         </div> <!--content-container CLOSED -->
 
 
         <!-- LOGIN Modal STARTS here -->
-        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">>
+        <div id="authModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">>
           <div class="modal-content">
               <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                  <h4 class="modal-title">Login to Start Shopping</h4>
+                  <h4 class="modal-title" id="myModalLabel">Login to Start Shopping</h4>
               </div>
               <div class="modal-body">
                 <div id="">User Facing Login Message</div>
@@ -135,6 +139,26 @@
           </div>
       </div>
     <!-- LOGIN Modal ENDS here -->
+
+<!-- PRODUCT Modal STARTS here -->
+    <div id="productModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+<!-- PRODUCT Modal ENDS here -->
 
 
     </body>

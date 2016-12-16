@@ -37,3 +37,8 @@ nav {
   border: 1px solid black;
   display: inline-block;
 }
+
+.product-module{
+  height: 50px;
+  width: 50px;
+}

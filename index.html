@@ -11,15 +11,134 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
-    <body class="container-fluid">
-      <h1>Example</h1>
+    <body>
+      <div class="title-bar"></div>
+      <nav>
+        <div class="button-wrapper">
+          <button class="nav-button" type="submit">Cart</button>
+          <button class="nav-button" type="submit" data-toggle="modal" data-target="#myModal">Login</button>
+          <button class="nav-button" type="submit">Purchases</button>
+        </div>
+      </nav>
+          <div class="content-container">
+          <h1>Example</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+
+
+        </div> <!--content-container CLOSED -->
+
+
+        <!-- LOGIN Modal STARTS here -->
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">>
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title">Login to Start Shopping</h4>
+              </div>
+              <div class="modal-body">
+                <div id="">User Facing Login Message</div>
+                  <div class="row">
+
+                      <div class="col-xs-6">
+                        <!-- **  SIGN UP  ** STARTS here -->
+                          <div class="well">
+                              <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                                  <div class="form-group">
+                                      <label for="username" class="control-label">Username</label>
+                                      <input type="text" class="form-control" id="" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                      <span class="help-block"></span>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="password" class="control-label">Password</label>
+                                      <input type="password" class="form-control" id="" name="password" value="" required="" title="Please enter your password">
+                                      <span class="help-block"></span>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="password" class="control-label">Confirm Password</label>
+                                      <input type="password" class="form-control" id="" name="password" value="" required="" title="Please enter your password">
+                                      <span class="help-block"></span>
+                                  </div>
+                                  <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                              </form>
+                          </div>
+                      </div>   <!-- ** SIGN UP ** ENDS here -->
+
+                      <div class="col-xs-6">
+                          <!-- **  SIGN IN  ** STARTS here -->
+                        <div class="well">
+                            <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Username</label>
+                                    <input type="text" class="form-control" id="" name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" id="" name="password" value="" required="" title="Please enter your password">
+                                    <span class="help-block"></span>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <button type="submit" class="btn btn-success btn-block">Sign In</button>
+                            </form>
+                        </div>
+                      </div>   <!-- ** SIGN IN ** ENDS here -->
+                  </div> <!-- END of FIRST row -->
+
+                  <div class="row" "hidden-till-sign-in"> <!-- START of SECOND row -->
+                      <div class="col-xs-6">
+                          <!-- **  CHANGE PASSWORD ** STARTS here -->
+                          <div class="well">
+                              <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                                  <div class="form-group">
+                                      <label for="password" class="control-label">Old Password</label>
+                                      <input type="password" class="form-control" id="" name="password" value="" required="" title="Please enter your password">
+                                      <span class="help-block"></span>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="password" class="control-label">New Password</label>
+                                      <input type="password" class="form-control" id="" name="password" value="" required="" title="Please enter your password">
+                                      <span class="help-block"></span>
+                                  </div>
+                                  <button type="submit" class="btn btn-success btn-block">Change Password</button>
+                              </form>
+                          </div>
+                      </div> <!-- ** CHANGE PASSWORD ** ENDS here -->
+                      <div class="col-xs-6">
+                        <!-- **  SIGN OUT  ** STARTS here -->
+                          <div class="well">
+                              <form id="" method="POST" action="/login/" novalidate="novalidate">
+                                  <div class="form-group">
+                                      <label for="username" class="control-label">Sign Out</label>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                  </div>
+                                  <button type="submit" class="btn btn-success btn-block">Sign Out</button>
+                              </form>
+                          </div>
+                      </div> <!-- **  SIGN OUT  ** STARTS here -->
+              </div> <!-- END of SECOND row -->
+          </div>
+      </div>
+    <!-- LOGIN Modal ENDS here -->
+
+
     </body>
+
+
+
 </html>

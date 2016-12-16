@@ -1,0 +1,39 @@
+.content-container {
+  width: 60%;
+  min-width: 430px;
+  margin: 0 auto;
+  border: 2px solid green;
+}
+
+
+.title-bar {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: blue;
+  position: absolute;
+  bottom: 0
+  }
+
+.button-wrapper{
+  margin: 0 auto;
+  width: 60%;
+  min-width: 430px;
+  height: 100%;
+  border: cyan solid 1px;
+}
+
+.nav-button {
+  text-align: center;
+  height: 100%;
+  width: 32%;
+  color: black;
+  border: 1px solid black;
+  display: inline-block;
+}

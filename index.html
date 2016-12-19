@@ -53,21 +53,18 @@
           <div class="col-xs-6">
             <!-- **  SIGN UP  ** STARTS here -->
             <div class="well">
-              <form  method="POST" action="/login/" novalidate="novalidate">
+              <form >
                 <div class="form-group">
                   <label for="username" class="control-label">Username</label>
-                  <input type="text" class="form-control"  name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
-                  <span class="help-block"></span>
+                  <input type="text" class="form-control"  name="username" title="Please enter you username" placeholder="example@gmail.com">
                 </div>
                 <div class="form-group">
                   <label for="password" class="control-label">Password</label>
-                  <input type="password" class="form-control"  name="password" value="" required="" title="Please enter your password">
-                  <span class="help-block"></span>
+                  <input type="password" class="form-control"  name="password" title="Please enter your password">
                 </div>
                 <div class="form-group">
                   <label for="password" class="control-label">Confirm Password</label>
-                  <input type="password" class="form-control"  name="password" value="" required="" title="Please enter your password">
-                  <span class="help-block"></span>
+                  <input type="password" class="form-control"  name="password" title="Please enter your password">
                 </div>
                 <button type="submit" class="btn btn-success btn-block">Sign Up</button>
               </form>
@@ -78,16 +75,14 @@
           <div class="col-xs-6">
             <!-- **  SIGN IN  ** STARTS here -->
             <div class="well">
-              <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+              <form id="loginForm" >
                 <div class="form-group">
                   <label for="username" class="control-label">Username</label>
-                  <input type="text" class="form-control"  name="username" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
-                  <span class="help-block"></span>
+                  <input type="text" class="form-control"  name="username" title="Please enter you username" placeholder="example@gmail.com">
                 </div>
                 <div class="form-group">
                   <label for="password" class="control-label">Password</label>
-                  <input type="password" class="form-control"  name="password" value="" required="" title="Please enter your password">
-                  <span class="help-block"></span>
+                  <input type="password" class="form-control"  name="password" title="Please enter your password">
                 </div>
                 <br>
                 <br>
@@ -106,16 +101,14 @@
           <div class="col-xs-6">
             <!-- **  CHANGE PASSWORD ** STARTS here -->
             <div class="well">
-              <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+              <form id="loginForm" >
                 <div class="form-group">
                   <label for="password" class="control-label">Old Password</label>
-                  <input type="password" class="form-control"  name="password" value="" required="" title="Please enter your password">
-                  <span class="help-block"></span>
+                  <input type="password" class="form-control"  name="password" title="Please enter your password">
                 </div>
                 <div class="form-group">
                   <label for="password" class="control-label">New Password</label>
-                  <input type="password" class="form-control"  name="password" value="" required="" title="Please enter your password">
-                  <span class="help-block"></span>
+                  <input type="password" class="form-control"  name="password" title="Please enter your password">
                 </div>
                 <button type="submit" class="btn btn-success btn-block">Change Password</button>
               </form>
@@ -125,7 +118,7 @@
           <div class="col-xs-6">
             <!-- **  SIGN OUT  ** STARTS here -->
             <div class="well">
-              <form  method="POST" action="/login/" novalidate="novalidate">
+              <form >
                 <div class="form-group">
                   <label for="username" class="control-label">Sign Out</label>
                   <br>
@@ -157,16 +150,19 @@
           <h4 class="modal-title">Modal title</h4>
         </div>
         <div class="modal-body">
+          <p class="product-description">Bacon ipsum dolor amet t-bone pastrami sausage filet mignon chicken.
+            Cupim turducken pancetta venison jerky Alcatra swine ham hock, salami
+            drumstick chicken jowl. Kielbasa pork belly pork loin picanha pastrami.
+          </p>
+          <img class="product-image" src="http://i.imgur.com/nrGTQt4.jpg" title="source: imgur.com"/>
 
           <button class="add-cart" type="button">Add to Cart</button>
         </div>
         <div class="modal-footer">
 
         </div>
-      </div>
-      <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
+      </div><!-- /.modal-content -->
+    </div>  <!-- /.modal-dialog -->
   </div><!-- PRODUCT Modal ENDS here -->
 
 </body>

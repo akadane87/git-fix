@@ -6,9 +6,12 @@
 // const stripeEvents = require('./stripe/stripe-events.js');
 //
 // require('./assets/scripts/index.js');
+const ScrollReveal = require('scrollreveal');
+
 
 $(() => {
   // setAPIOrigin(location, config);
   // stripeEvents.addHandlers();
   // authEvents.addHandlers();
+  window.sr= ScrollReveal();
 });
